@@ -6,7 +6,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 for i in alphabet:
     print(i)
 
-# ask user for a number between 1 and 25
+# ask user for a number between 1 and 26
 a_char =  int(input("Please type in a number between 1 and 26  "))
 
 # print the letter
