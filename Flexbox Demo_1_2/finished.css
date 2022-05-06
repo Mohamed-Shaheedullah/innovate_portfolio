@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;  /*for container*/
+    /*controlling children with flex*/
+    flex-direction: row; 
+    /* main and cross axes rotate for row and column */
+    /* flex-wrap: wrap; /* note the 400px width setting */
+    /*flex flow is shorthand eg   */
+    /*justift content matches main axis*/
+    justify-content: space-evenly;
+    /*align items works on the cross axis not the main axis*/
+    align-items:flex-start;
+    /*align-self can change for an individual element*/
+    /*flex-grow default 0 can use on items rather than container
+    eg change to 1 or 2 etc
+    */
+
+    /*
+    flex shrink does opposite
+    */
+
+}
+
+.box {
+    /*use order on children 0 default means html order, can change no in flex*/
+    color: white;
+    font-size: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding: 15px;
+    width: 40px;
+    
+}
+
+/* Colours for each box */
+
+.box1 { background: #eccc68; }
+.box2 { background: #ff6348; }
+.box3 { background: #ff7f50; }
+.box4 { background: #ff4757; order:1; }
+.box5 { background: #f1c40f; }
+.box6 { background: #e67e22; }
+.box7 { background: #2ed573; }
+.box8 { background: #1e90ff; }
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; }
