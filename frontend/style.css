@@ -1,68 +1,66 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 * {
-font-family: 'Roboto Slab';
+	font-family: 'Roboto Slab';
 
 }
 
 
 body {
-background-color: rgb(229, 241, 188);
+	background-color: rgb(229, 241, 188);
 }
+
 /* wildcard * apply to everthing, every elemnent */
 
 nav {
-    display: flex;
-    font-size: 1.2em;
-    justify-content: space-evenly;
+	display: flex;
+	font-size: 1.2em;
+	justify-content: space-evenly;
 }
 
 
 h2 {
 
-color: rgb(128, 23, 160);
-flex: 1 1 100%;
+	color: rgb(128, 23, 160);
+	flex: 1 1 100%;
 }
-li {
-    color:rgb(16, 20, 235)
 
+li {
+	color: rgb(16, 20, 235)
 }
 
 .main-content {
-background-color: rgb(238, 237, 159);
+	background-color: rgb(238, 237, 159);
 }
-.for-flex {
-    /* display: flex;
-    /* flex-wrap: wrap;  */
-    /* width: auto; */
-   /* justify-content: space-evenly; */
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.for-flex {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #top {
-color: brown;
+	color: brown;
 }
+
 /* 
 double element will target all 
 second element within first */
 
 #top a {
-color: rgb(109, 100, 17);
+	color: rgb(109, 100, 17);
 }
 
 #top a:hover {
-background-color: rgb(247, 242, 242);
+	background-color: rgb(247, 242, 242);
 
 }
+
 #top a:visited {
-color: brown;
+	color: brown;
 }
-
 
 /* chevron means only 1 level down in heirarchy */
 
@@ -71,16 +69,19 @@ pseudo classes
  selector : state will usually be used with links or hover */
 
 img {
-height: 40%;
-width: 40%;
-/* % is relative to parent
+	height: 25%;
+	width: 25%;
+	/* % is relative to parent
 vh is relative to size of screen*/
-display: block;
-margin-left:auto;
-margin-right:auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-nav, h1, h2, footer {
-    text-align: center;
+#acntr,
+nav,
+h1,
+h2,
+footer {
+	text-align: center;
 }
-
