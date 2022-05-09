@@ -10,6 +10,8 @@ dict_of_films["Dune"] = 2019
 
 print(dict_of_films)
 
+# Activity 1 ------------------------
+
 dict_of_dog = {
 "name" : "Prince", "colour": "Black", "age" : 7, "ears": "floppy", "teeth": "small" }
 
@@ -28,6 +30,8 @@ dict_of_dog["ears"] = "Stiff"
 print(dict_of_dog["ears"])
 
 
+# Activity 2 -----------------------------------
+
 countries_dict = {
     "United Kingdom" : "London",
     "France" : "Paris",
@@ -40,4 +44,12 @@ countries_dict.setdefault("Bangladesh", "Dhaka")
 countries_dict.setdefault("USA", "Washington D. C.")
 
 print(countries_dict) # this is a simplke method
+
+list_of_keys = list(countries_dict.keys())
+list_of_languages = ["English", "French", "German","Spanish", "Italian", "Bengali", "English" ]
+
+new_dictionary = dict(zip(list_of_keys, list_of_languages))
+
+print(new_dictionary)
+
 
