@@ -52,15 +52,4 @@ new_dictionary = dict(zip(list_of_keys, list_of_languages))
 
 print(new_dictionary)
 
-# activity 3
-fav_songs = [{"artist":"fontain dc", "song_name" : "televised mind", "genre":"indy", "release year":2019},
-{"artist":"bombay bicycle club", "song_name" : "eat, sleep , wake", "genre":"indy", "release year":2018},
-{"artist":"khruangbin", "song_name" : "Texas", "genre":"thai funk", "release year":2015},
-{"artist":"muse", "song_name" : "starlight", "genre":"indy", "release year":2008}]
-
-print(fav_songs)
-
-fav_songs.append({"artist":"radiohead", "song_name": "daydreaming","genre ": "indy", "release_year": 2010})
-
-print(fav_songs)
 
