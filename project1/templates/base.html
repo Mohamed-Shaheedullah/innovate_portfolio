@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- These lines will be 'extended' to all pages -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width>, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'main.css')}}">
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+    <!-- <link rel="stylesheet" href="./../static/main.css".css> -->
+    <title>Document</title>
+    <!-- these links will appear on every page -->
+    <nav>
+        <a href="{{ url_for('my_view.index') }}"><li>Home</li></a>
+        <a href="{{ url_for('my_view.page1') }}"><li>page1</li></a>
+        <a href="{{ url_for('my_view.page2') }}"><li>page2</li></a>
+        <a href="{{ url_for('my_view.page3') }}"><li>page3</li></a>
+        <a href="{{ url_for('my_view.page4') }}"><li>page4</li></a>
+        <a href="{{ url_for('my_view.Admin') }}"><li>Admin</li></a>
+    </nav>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

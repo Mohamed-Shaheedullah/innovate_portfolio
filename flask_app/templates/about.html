@@ -2,25 +2,26 @@
 
 
 {% block content %}
-<h3>About Page</h3>
-<p>Testing</p>
-<h3>These are my fav artists</h3>
+    <h3>About Page</h3>
+    <h3>These are my fav artists</h3>
 
-<p>{{bands }}</p>
-<p>{% for each_band in bands %}</p>
+    <p>{{bands }}</p>
+    <!-- bands is a list , look in views for about page -->
+{% for each_band in bands %}
 {% endfor %}
 
-<form action="/about" method = "POST">
+<!-- <form action="/about" method = "POST"> -->
 
 {% if "Radiohead" in bands %}
-<p>{{bands[0] }}</p>
+    <p>Radiohead are great</p>
 {% else %}
-{% for x in bands %}
 
-<h3 name = "band entry"><p>{{ x }}</p></h3><button type="submit" name ="delete button">(delete)</button>
+{% for x in bands %}
+    <h3 name = "band entry"><p>{{ x }}</p></h3>
+    <!-- <button type="submit" name ="delete_button">(delete)</button> -->
 {% endfor %}
 {% endif %}
-</form>
+<!-- </form> -->
 
 
 <form action="/about" method="POST">

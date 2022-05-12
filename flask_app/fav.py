@@ -6,10 +6,12 @@ fav_songs = [{"artist":"fontain dc", "song_name" : "televised mind", "genre":"in
 fave_bands =[]
 
 for dict_i in fav_songs:
+    # brackets, append 1, list 1, values 2, index no goes outside list
+    # but inside append
     fave_bands.append(list(dict_i.values())[0])
-    print(list(dict_i.values())[0])
+#    print(list(dict_i.values())[0])
 
-print(fave_bands)
+# print(fave_bands)
 
 def add_to_list(band):
     fave_bands.append(band)
