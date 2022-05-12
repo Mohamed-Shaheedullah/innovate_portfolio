@@ -12,6 +12,11 @@ body {
     background-color: rgba(39, 78, 155, 1);
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 h1 {
     font-family: gilroyExtraBold;
     font-size: 54px;
