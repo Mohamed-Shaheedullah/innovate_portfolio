@@ -1,0 +1,37 @@
+.desktop, .mobile {
+    display:none;
+}
+
+@media (orientation: portrait) {
+    body {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 5%;
+        }
+}
+
+@media (orientation: landscape) {
+    body {
+        color: black;
+        background-color:white;
+        text-align: center;
+        padding: 5%;
+        }
+}
+
+
+
+@media (orientation: landscape) {
+    .desktop {
+        display: inline-block
+    }
+
+}
+
+@media (orientation: portrait) {
+    .mobile {
+        display: inline-block
+    }
+
+}
